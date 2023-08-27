@@ -39,6 +39,15 @@ int main()
 				cout << "-> S for Sort (Ascending/Decending)\n";
 				cout << "-> Q for search an element in array\n";
 				cout << "-> D for deleting an element\n";
+				cout << "---------------------------------Main Menu-----------------------------------------";
+				cout << "\n\n\n\n---Which operation you want to perform on your array : ---\n";
+				cout << "M for Merge(Add new array to existing array)\n";
+				cout << "I for Insert(Insert new element at desired position)\n";
+				cout << "E for Edit(Edit Old element from your desired position)\n";
+				cout << "U for Update(Add a new element at last)\n";
+				cout << "S for Sort (Ascending/Decending)\n";
+				cout << "Q for search an element in array\n";
+				cout << "D for deleting an element\n";
 				cout << "X for deleting the whole array\n";
 			}
 			if (turn != 1)
