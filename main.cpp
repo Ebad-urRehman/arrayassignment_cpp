@@ -30,7 +30,12 @@ int main()
 			char choice;
 			if (turn == 1)
 			{
+<<<<<<< HEAD
 				cout << "---------------------------------Main Menu------------------------------------------";
+=======
+<<<<<<< HEAD
+				cout << "---------------------------------Main Menu-----------------------------------------";
+>>>>>>> 5a933b015c4f652bf68221df22a04719fc06b327
 				cout << "\n\n\n\n---Which operation you want to perform on your array : ---\n";
 				cout << "M for Merge(Add new array to existing array)\n";
 				cout << "-> I for Insert(Insert new element at desired position)\n";
@@ -39,6 +44,10 @@ int main()
 				cout << "-> S for Sort (Ascending/Decending)\n";
 				cout << "-> Q for search an element in array\n";
 				cout << "-> D for deleting an element\n";
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 5a933b015c4f652bf68221df22a04719fc06b327
 				cout << "---------------------------------Main Menu-----------------------------------------";
 				cout << "\n\n\n\n---Which operation you want to perform on your array : ---\n";
 				cout << "M for Merge(Add new array to existing array)\n";
@@ -48,6 +57,10 @@ int main()
 				cout << "S for Sort (Ascending/Decending)\n";
 				cout << "Q for search an element in array\n";
 				cout << "D for deleting an element\n";
+<<<<<<< HEAD
+=======
+>>>>>>> 6482e390ceec710a24e32b5493fbf2cb0bfb38df
+>>>>>>> 5a933b015c4f652bf68221df22a04719fc06b327
 				cout << "X for deleting the whole array\n";
 			}
 			if (turn != 1)
