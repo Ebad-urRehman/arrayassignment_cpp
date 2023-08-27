@@ -11,7 +11,7 @@ int main()
 		int* arr = new int[n];
 		array.get_array(arr, n);
 		array.display_array(arr, n);
-		
+
 		//array is created now
 		int arr_status = true;
 
@@ -30,12 +30,7 @@ int main()
 			char choice;
 			if (turn == 1)
 			{
-<<<<<<< HEAD
-				cout << "---------------------------------Main Menu------------------------------------------";
-=======
-<<<<<<< HEAD
 				cout << "---------------------------------Main Menu-----------------------------------------";
->>>>>>> 5a933b015c4f652bf68221df22a04719fc06b327
 				cout << "\n\n\n\n---Which operation you want to perform on your array : ---\n";
 				cout << "M for Merge(Add new array to existing array)\n";
 				cout << "-> I for Insert(Insert new element at desired position)\n";
@@ -44,23 +39,6 @@ int main()
 				cout << "-> S for Sort (Ascending/Decending)\n";
 				cout << "-> Q for search an element in array\n";
 				cout << "-> D for deleting an element\n";
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 5a933b015c4f652bf68221df22a04719fc06b327
-				cout << "---------------------------------Main Menu-----------------------------------------";
-				cout << "\n\n\n\n---Which operation you want to perform on your array : ---\n";
-				cout << "M for Merge(Add new array to existing array)\n";
-				cout << "I for Insert(Insert new element at desired position)\n";
-				cout << "E for Edit(Edit Old element from your desired position)\n";
-				cout << "U for Update(Add a new element at last)\n";
-				cout << "S for Sort (Ascending/Decending)\n";
-				cout << "Q for search an element in array\n";
-				cout << "D for deleting an element\n";
-<<<<<<< HEAD
-=======
->>>>>>> 6482e390ceec710a24e32b5493fbf2cb0bfb38df
->>>>>>> 5a933b015c4f652bf68221df22a04719fc06b327
 				cout << "X for deleting the whole array\n";
 			}
 			if (turn != 1)
@@ -122,9 +100,9 @@ int main()
 						{
 							cout << "Enter position : \n";
 							cin >> position;
-							if (position <= 0 || position > n+1)
+							if (position <= 0 || position > n + 1)
 							{
-								cout << "\n\nPlease Enter position in range 1-" << n+1 << endl;
+								cout << "\n\nPlease Enter position in range 1-" << n + 1 << endl;
 								cout << "\a";
 							}
 							else
@@ -168,7 +146,7 @@ int main()
 
 						//inserting new element to temp array at first
 						array.insert_arr(1, value, arr_temp, n);
-						
+
 						//deleting previous array
 						delete[] arr;
 
@@ -306,7 +284,7 @@ int main()
 				}
 				break;
 			case 'D':
-				cout<<"\n\n\n-------------------Deletion Menu------------------";
+				cout << "\n\n\n-------------------Deletion Menu------------------";
 				char del_choice;
 				int val_to_del;
 				int position;
@@ -346,7 +324,7 @@ int main()
 								cout << "Deleting value...................\n";
 
 								array.del_el(arr, n, val_to_del);
-								
+
 								// reducing size
 								n--;
 								// creating a temp array with capicity of n-1
@@ -363,14 +341,14 @@ int main()
 
 								//assigning temp array back to new array with same name as previous one
 								array.assign_arr(arr, arr_temp, n);
-								
+
 								//deleting temp array
 								delete[] arr_temp;
 								cout << "\n---Element Deleted---\n";
 								array.display_array(arr, n);
 								break;
 							}
-							else if(check_value == false)
+							else if (check_value == false)
 							{
 								cout << "\a";
 								cout << "Enter a value present in array\n";
@@ -390,7 +368,7 @@ int main()
 						{
 						case 'F':
 							array.del_by_position(arr, n, 1);
-							
+
 							// reducing size
 							n--;
 
@@ -420,7 +398,7 @@ int main()
 
 							// reducing size
 							n--;
-							
+
 							// creating a temp array with capicity of n-1
 							arr_temp = new int[n];
 
@@ -476,7 +454,7 @@ int main()
 
 							// reducing size
 							n--;
-							
+
 							// creating a temp array with capicity of n-1
 							arr_temp = new int[n];
 
@@ -494,7 +472,7 @@ int main()
 
 							//deleting temp array
 							delete[] arr_temp;
-							
+
 							cout << position << "th Element deleted\n";
 							cout << "-----Your Array is now-----\n";
 							array.display_array(arr, n);
@@ -504,7 +482,7 @@ int main()
 							cout << "\a";
 							break;
 						}
-					break;
+						break;
 					default:
 						cout << "Enter correct value";
 						cout << "\a";
@@ -557,7 +535,7 @@ int main()
 				int search_val;
 				cout << "Enter an element to search in array\n";
 				cin >> search_val;
-				cout << "......Searching element " << search_val<<"..........\n";
+				cout << "......Searching element " << search_val << "..........\n";
 				array.search_el(arr, n, search_val);
 				break;
 			default:
